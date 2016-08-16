@@ -1,0 +1,76 @@
+.model ELABORAZIONE
+.inputs BPM7 BPM6 BPM5 BPM4 BPM3 BPM2 BPM1 BPM0 START
+.outputs N7 N6 N5 N4 N3 N2 N1 N0 SA1 SA0
+.latch    N7 P7 re NIL 0
+.latch    N6 P6 re NIL 0
+.latch    N5 P5 re NIL 0
+.latch    N4 P4 re NIL 0
+.latch    N3 P3 re NIL 0
+.latch    N2 P2 re NIL 0
+.latch    N1 P1 re NIL 0
+.latch    N0 P0 re NIL 0
+.latch    [131] G1 re NIL 0
+.latch    Q0 G0 re NIL 0
+.names N6 Z P7 P6 N7
+1-1- 1
+-110 1
+0101 1
+.names Z P6 [165] N6
+111 1
+100 1
+.names Z [165] [169] N5
+111 1
+.names Z C4 [170] N4
+101 1
+.names N2 Z P3 P2 N3
+1-1- 1
+-110 1
+0101 1
+.names N0 Z P2 P1 P0 N2
+1-1-- 1
+-110- 1
+-1011 1
+.names N0 Z P1 P0 N1
+1-1- 1
+-101 1
+.names Z P0 N0
+10 1
+.names EQU G1 SA1
+11 1
+.names EQU G0 SA0
+11 1
+.names BPM6 BPM4 BPM3 BPM2 [171] CIN1
+1---- 1
+-11-- 1
+-1-11 1
+.names CIN1 [131] Q0
+1- 1
+-0 1
+.names G1 [131] [168] EQU
+111 1
+001 1
+.names START EQU Z
+11 1
+.names P4 P3 P2 P1 P0 C4
+11111 1
+.names BPM7 [164] [131]
+11 1
+.names BPM6 BPM5 [164]
+1- 1
+-1 1
+.names P5 C4 [165]
+0- 1
+-0 1
+.names Q0 G0 [168]
+11 1
+00 1
+.names P5 C4 [169]
+1- 1
+-1 1
+.names N3 P4 P3 [170]
+-1- 1
+0-1 1
+.names BPM1 BPM0 [171]
+1- 1
+-1 1
+.end
